@@ -1,0 +1,20 @@
+{
+  "name": "@tphummel/untappd",
+  "version": "1.0.0",
+  "description": "download all checkin data for a user",
+  "main": "get-checkins.js",
+  "dependencies": {
+    "async": "^2.1.4",
+    "mkdirp": "^0.5.1",
+    "simple-get": "^2.3.0"
+  },
+  "devDependencies": {
+    "sepia": "^2.0.2",
+    "standard": "^8.6.0"
+  },
+  "scripts": {
+    "test": "standard"
+  },
+  "author": "",
+  "license": "ISC"
+}
