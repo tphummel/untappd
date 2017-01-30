@@ -70,3 +70,5 @@ VCR_MODE=playback node get-checkins.js tphummel
 at time of writing, hobby api accounts are rate limited to 100 calls per hour
 
 [untappd api v4 docs](https://untappd.com/api/docs/v4)
+
+untappd is a solid product with an impressive database. please consider becoming a [supporter](https://untappd.com/supporter) if you are interested in features like advanced reports and data export.
