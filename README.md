@@ -50,6 +50,27 @@ data
 
 ```
 
+## example analysis
+
+Most Checkins, Grouped by Beer, 2016
+```
+➜ cat data/tphummel/2016/*.json \
+  | jq --slurp ".[] \
+  | .brewery.brewery_name+\" \"+.beer.beer_name" \
+  | awk '{ FS="\n" count[$1]++}END{for(j in count) print j","count[j]}' \
+  | sort -t "," -k2 -nr \
+  | head -n8
+
+"Guinness Guinness Draught",16
+"Firestone Walker Brewing Company 805 Blonde",10
+"Tom Hummel Homebrew Batch \"C\" Blonde Ale",9
+"Tom Hummel Homebrew Batch \"B\" American Brown Ale",8
+"Stella Artois Stella Artois",7
+"New Belgium Brewing Company Fat Tire",5
+"Deschutes Brewery Black Butte Porter",5
+"Ballast Point Brewing & Spirits Watermelon Dorado",5
+```
+
 ## dev
 
 ```
