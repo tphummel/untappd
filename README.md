@@ -23,7 +23,7 @@ node get-checkins.js username [max_id]
 ## data file output
 
 ```
-➜  untappd ✗ tree data            
+➜  tree data            
 data
 └── tphummel
     ├── 2012
