@@ -70,6 +70,24 @@ Most Checkins, Grouped by Beer, 2016
 "Ballast Point Brewing & Spirits Watermelon Dorado",5
 ```
 
+Most Checkins, Grouped by Brewery, 2016
+
+```
+➜  untappd git:(master) ✗ cat data/tphummel/2016/*.json \
+  | jq --slurp ".[] .brewery.brewery_name" \
+  | awk '{ FS="\n" count[$1]++}END{for(j in count) print j","count[j]}' \
+  | sort -t "," -k2 -nr  
+
+"Firestone Walker Brewing Company",27
+"Guinness",25
+"Tom Hummel Homebrew",17
+"Stone Brewing",13
+"Modern Times Beer",13
+"Golden Road Brewing",13
+"Ballast Point Brewing & Spirits",13
+"Lagunitas Brewing Company",11
+"Deschutes Brewery",10
+```
 ## dev
 
 ```
