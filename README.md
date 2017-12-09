@@ -55,7 +55,7 @@ data
 Most Checkins, Grouped by Beer, 2016
 ```
 ➜ cat data/tphummel/2016/*.json \
-  | jq --slurp ".[] .brewery.brewery_name+\" \"+.beer.beer_name" \
+  | jq --slurp ".[] | (.brewery.brewery_name + \" \" + .beer.beer_name)" \
   | awk '{ FS="\n" count[$1]++}END{for(j in count) print j","count[j]}' \
   | sort -t "," -k2 -nr \
   | head -n8
