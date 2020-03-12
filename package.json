@@ -5,7 +5,7 @@
   "main": "get-checkins.js",
   "dependencies": {
     "async": "^2.1.4",
-    "mkdirp": "^0.5.1",
+    "mkdirp": "^1.0.0",
     "simple-get": "^2.3.0"
   },
   "devDependencies": {
