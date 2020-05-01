@@ -6,15 +6,19 @@
   "dependencies": {
     "async": "^2.1.4",
     "mkdirp": "^0.5.1",
-    "simple-get": "^2.3.0"
+    "simple-get": "^2.3.0",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "sepia": "^2.0.2",
     "standard": "^8.6.0"
   },
   "scripts": {
-    "test": "standard"
+    "test": "standard",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "snyk": true
 }
