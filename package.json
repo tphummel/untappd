@@ -6,7 +6,7 @@
   "dependencies": {
     "async": "^2.1.4",
     "mkdirp": "^0.5.1",
-    "simple-get": "^2.3.0"
+    "simple-get": "^4.0.1"
   },
   "devDependencies": {
     "sepia": "^2.0.2",
