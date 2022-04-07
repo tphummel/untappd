@@ -4,7 +4,7 @@
   "description": "download all checkin data for a user",
   "main": "get-checkins.js",
   "dependencies": {
-    "async": "^2.1.4",
+    "async": "^3.2.2",
     "mkdirp": "^0.5.1",
     "simple-get": "^2.3.0"
   },
